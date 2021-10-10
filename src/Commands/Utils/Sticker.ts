@@ -34,8 +34,8 @@ export default class extends BaseCommand {
         const sticker = new Sticker(
             typeof media === 'string' ? media : await this.client.downloadMediaMessage(media as Message),
             {
-                pack: title[1] ?? 'Entropy',
-                author: title[0] ?? 'Well',
+                pack: title[1] ?? '𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥 𝘽𝙤𝙩 𝙎𝙚𝙧𝙗𝙖𝙜𝙪𝙣𝙖 🐼 𝙉𝙤𝙢𝙚𝙧 ❓ •➤ 𝙁𝙤𝙡𝙡𝙤𝙬 𝙄𝙜 : 𝘽𝙤𝙩_𝙎𝙝𝙞𝙣𝙯𝙪',
+                author: title[0] ?? '',
                 categories: [(flags.category || '🌹') as Categories],
                 type: flags.crop ? 'crop' : flags.stretch ? 'default' : 'full'
             }
