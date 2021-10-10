@@ -2,7 +2,10 @@
   "name": "entropy",
   "version": "1.0.0",
   "description": "Well",
-  "main": "dist/index.js",
+  "main": "dist/index.js",  
+  "engines": { 
+  "node": "16.10.0"
+  },
   "scripts": {
     "build": "rm -rf dist && tsc -p .",
     "start": "node dist/bot.js",
